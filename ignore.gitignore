@@ -1,0 +1,6 @@
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/*/out
+/*/*/build
+/*/*/production

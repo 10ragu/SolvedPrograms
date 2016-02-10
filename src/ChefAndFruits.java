@@ -20,10 +20,17 @@ public class ChefAndFruits {
                 .collect(Collectors.toList());
 
         Object[] numberArray = numbers.toArray();
+        boolean validateInput = find.IsValidateInput(numberArray);
 
-        int[] minimumDiffs = find.MinimumDiff(numberArray);
-        for (int minDiff : minimumDiffs){
-            System.out.println(minDiff);
+        if (validateInput)
+        {
+            int[] minimumDiffs = find.MinimumDiff(numberArray);
+            for (int minDiff : minimumDiffs)
+            {
+                System.out.println(minDiff);
+            }
         }
+        else
+            System.out.println("Provided input is not valid. Please check the input file(file name: input.txt).");
     }
 }

@@ -4,7 +4,8 @@
  */
 public class DifferenceFinder {
 
-    public int[] MinimumDiff(Object[] numberArray) {
+    public int[] MinimumDiff(Object[] numberArray)
+    {
         int testCases = (int) numberArray[0];
         int[] fruitDifferences=new int[testCases];
 
@@ -33,5 +34,13 @@ public class DifferenceFinder {
             }
         }
         return fruitDifferences;
+    }
+
+    public boolean IsValidateInput(Object[] numberArray)
+    {
+        int testCases = (int) numberArray[0];
+        int validInput=(testCases*3)+1;
+
+        return (validInput==(numberArray.length));
     }
 }
